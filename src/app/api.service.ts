@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ApiService {
 
-  API_KEY = '6ddade89391d4393801cd37d79e488b9'
+  API_KEY = '########'
 
   public getNews() {
     return this.httpClient.get('https://newsapi.org/v2/top-headlines?country=us&apiKey=' + this.API_KEY);
