@@ -1,0 +1,32 @@
+<div>
+    <h1 class="home-heading">Ye Olde Newspaper</h1>    
+    <hr>
+        <div>
+            <ul class="sub-heading">
+                <li>ISSUE No 46</li>
+                <li>FRIDAY, DECEMBER 17TH 2021</li>
+                <li>PRICE 7 CENTS</li>
+            </ul>
+        </div>
+    <hr>
+</div>
+<div class="wrapper">
+    <div class="home-article" *ngFor="let article of news">
+        <div class="home-title">
+            <h2>{{article.title}}</h2>
+        </div>
+        <div class="home-image">
+            <img src="{{article.urlToImage}}" alt="">
+        </div>
+        <div class="home-description">
+            <p>{{article.description}}</p>
+        </div>
+      <div class="home-link">
+        <a href="{{article.url}}">Read full article</a>
+      </div>
+    </div>
+</div>
+<hr>
+<footer>
+    <div class="footer">Copyright &copy; Alexander Phomthavong - WEBD171 Fall 2021</div>
+</footer>

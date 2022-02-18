@@ -1,0 +1,86 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1200px;
+  height: auto;
+  margin: 0 auto;
+  background: #d8cfbe61;
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+h1.home-heading {
+  font-family: "UnifrakturCook", cursive;
+  font-size: 5rem;
+  text-align: center;
+}
+
+.sub-heading {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.sub-heading li {
+  list-style: none;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: auto 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.home-article {
+  border: 1px solid #ccc;
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  padding: 1rem;
+}
+.home-article h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.home-image img {
+  display: block;
+  margin: auto;
+  max-width: 300px;
+  filter: blur(1.2px) brightness(0.7) grayscale(0.61) hue-rotate(48deg)
+    sepia(0.62) contrast(0.7);
+}
+
+.home-link {
+  text-align: center;
+}
+
+.footer {
+  font-size: smaller;
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 700px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .sub-heading {
+    display: block;
+    text-align: center;
+  }
+}
